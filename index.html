@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A blended approach: Using AI and traditional methods to provide Candidate evidence</title>
+    <title>Augmenting RPL with the 7 Learning Spaces</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
-        /* Define brand colours as CSS variables (reusing your scheme) */
+        /* Define brand colours as CSS variables */
         :root {
             --brand-pink: #e72582;
             --brand-light-grey: #abb5bf;
             --brand-dark-blue: #1f2a52;
             --brand-cyan: #00bec7;
-            --brand-light-cyan: #d2f0f0; /* Keeping a light background for main content */
+            --brand-light-cyan: #d2f0f0; 
             --brand-white: #FFFFFF;
         }
 
@@ -30,7 +30,7 @@
         .accent-text { color: var(--brand-pink); }
         .card-bg { background-color: var(--brand-white); }
         .card-border { border-left-color: var(--brand-pink); }
-        .question-bg { background-color: #f8f8f8; } /* Lighter background for the question box */
+        .question-bg { background-color: #f8f8f8; }
         .question-text { color: var(--brand-dark-blue); }
         .question-strong { color: var(--brand-dark-blue); }
         .icon-color { color: var(--brand-cyan); }
@@ -53,15 +53,15 @@
         <!-- Header -->
         <header class="header-bg shadow-md">
             <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-                <h1 class="text-3xl font-bold header-text">A blended approach: Using AI and traditional methods to provide Candidate evidence</h1>
-                <p class="text-gray-300 mt-1">Flipping learning tools to enable personalised Recognition of Prior Learning (RPL) using the 7 spaces approach.</p>
+                <h1 class="text-3xl font-bold header-text">Augmenting RPL with the 7 Learning Spaces</h1>
+                <p class="text-gray-300 mt-1">Using AI to generate evidence for Recognition of Prior Learning (RPL) based on Ewan McIntosh's model.</p>
             </div>
         </header>
 
         <!-- Main Content -->
         <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
             
-            <p class="text-xl text-gray-800 font-semibold mb-6 mt-4">By using a blended approach when designing assessments, we can provide candidates with a choice about the evidence they provide.</p>
+            <p class="text-xl text-gray-800 font-semibold mb-6 mt-4">This model reimagines how candidates can provide evidence by leveraging different learning environments, augmented by AI.</p>
 
             <div id="accordion-container" class="space-y-4">
                 <!-- Accordion items will be injected here by JavaScript -->
@@ -70,72 +70,84 @@
     </div>
 
     <script>
-        // Data for the AI RPL Accelerator, blending the matrix concepts into the accordion structure
+        // Data structured around Ewan McIntosh's 7 Learning Spaces
         const learningSpaces = [
             {
-                title: "Augmented (Evidence Creation)",
-                icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 mr-4 icon-color flex-shrink-0"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 01-3-3V4.5a3 3 0 016 0v8.25a3 3 0 01-3 3z" /></svg>`, // Microphone / Performing
-                description: "This function focuses on enhancing the creation of verifiable evidence where practical demonstration is required, giving the candidate choices in how they demonstrate their competence.",
+                title: "Secret Spaces",
+                icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 mr-4 icon-color flex-shrink-0"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" /></svg>`,
+                description: "Private, individualised spaces for self-directed reflection. AI can act as a confidential coach, helping candidates articulate their experiences and turn tacit knowledge into explicit evidence.",
                 examples: [
-                    "<strong>AI Role-Play / Immersive Environment:</strong> The AI acts as a virtual manager, conducting a simulated performance review. The system records the spoken response and judges the application of policy adherence and communication skills, generating a scored transcript as evidence for the <strong>Performing Spaces</strong>.",
-                    "<strong>Blended Assessment (F2F/Trainer Interview):</strong> Candidates can opt for a live <strong>F2F observation</strong> by a qualified assessor or a recorded <strong>interview with the trainer</strong> to demonstrate complex skills, offering a traditional, human-centric evidence route.",
-                    "<strong>AI Podcast Partner:</strong> The candidate uses a recorded conversational interview (a 'podcast') with the AI to explain a complex project methodology, which the AI then summarises and maps to criteria, offering an <strong>Auditory Choice</strong> for evidence capture."
+                    "<strong>AI Reflective Partner (Feed-Up, Feed-Back, Feed-Forward - Ruud Duvecot - CAMPLUS):</strong> The candidate uses a structured reflective tool where an AI partner prompts them to define a project goal (Feed-Up), describe the actions they took to achieve it (Feed-Back), and articulate what lessons they will carry into future projects (Feed-Forward).",
+                    "<strong>Socratic Reflection Agent:</strong> An AI agent delves into a candidate's work experience, asking probing questions about great personal experiences on the job relevant to a specific unit of competency, showcasing their problem-solving and conceptual thinking.",
+                    "<strong>Traditional Journaling:</strong> Candidates can still use a private diary or journal for reflection, which can later be reviewed with a human assessor to extract evidence."
                 ],
-                question: "If the AI handles the scenario and recording, what unique human skills do assessors need to verify the <em>authenticity</em> and <em>context</em> of the performance?"
+                question: "How can we ensure that AI prompting in a Secret Space enhances, rather than influences, the candidate's authentic reflection?"
             },
             {
-                title: "Adaptive (Guiding the Journey)",
-                icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 mr-4 icon-color flex-shrink-0"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" /></svg>`, // Three Lines / List / Pathway
-                description: "Adaptive tools guide the candidate through the RPL process by comparing their existing experience and documents against the required qualification standards to build a personalised roadmap, tailored to their preferred evidence method.",
+                title: "Group Spaces",
+                icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 mr-4 icon-color flex-shrink-0"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-4.67c.625.93.94 2.053.94 3.21v.003zM12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" /></svg>`,
+                description: "Collaborative environments where knowledge is built together. The challenge for RPL is isolating an individual's contribution. AI can analyse communication and project data to solve this.",
                 examples: [
-                    "<strong>Adaptive Paths / Bot/Agent Assistant:</strong> The candidate uploads their CV and job description. The AI <strong>analyses</strong> these against unit criteria, points out missing knowledge (e.g., policy or compliance understanding) evidence, and generates a dynamic 'to-do' list of policy summaries to create for the <strong>Watching Spaces</strong>.",
-                    "<strong>Study Mode:</strong> If a candidate's gap is regulatory, the AI suggests either reviewing a <strong>Video</strong> summary, listening to an <strong>AI Podcast Partner</strong> on compliance, or engaging in a chat with the <strong>AI Coach</strong> to address the gap, providing modality choice.",
-                    "<strong>Personalised Evidence Roadmaps:</strong> The AI predicts, based on input data, that 'Group Spaces' evidence is weak and provides targeted prompts on how to extract contribution data from team records."
+                    "<strong>Collaboration Analytics:</strong> A candidate submits chat logs from a team project (e.g., Slack or Teams). An AI analyses the logs to quantify the candidate's specific contributions, leadership moments, and problem-solving inputs.",
+                    "<strong>Blended Group Project:</strong> A candidate participates in a real-world group project, with a human observer noting their collaborative skills and contributions as evidence.",
+                    "<strong>Meeting Transcript Analysis:</strong> AI processes a recorded meeting transcript to highlight instances where the candidate demonstrated key communication or negotiation skills required by the qualification."
                 ],
-                question: "Does an AI-driven 'to-do' list risk narrowing the evidence scope, or does it genuinely enable wider, more relevant evidence gathering?"
+                question: "What ethical frameworks are needed to analyse group communications for individual assessment without violating the privacy of other team members?"
             },
             {
-                title: "Personalised (Curating Submission)",
-                icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 mr-4 icon-color flex-shrink-0"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" /></svg>`, // Document / Publishing
-                description: "This function curates the final submission by providing real-time feedback and mapping to ensure the candidate's artifacts clearly meet the assessment criteria.",
+                title: "Publishing Spaces",
+                icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 mr-4 icon-color flex-shrink-0"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" /></svg>`,
+                description: "Where learners create and share content. For RPL, these are artifacts of work. AI can help map these artifacts to criteria and provide feedback before submission.",
                 examples: [
-                    "<strong>Automated Evidence-to-Criteria Mapping:</strong> The candidate uploads a final client proposal (a <strong>Publishing Spaces</strong> artifact). The integrated AI <strong>analyses</strong> the document, highlighting every relevant assertion (e.g., 'cost analysis performed'), and provides a link to the corresponding unit criteria (e.g., 'Unit 3: 2.1').",
-                    "<strong>On-demand Content:</strong> The AI provides instant, tailored feedback on the tone, formality, and completeness of the portfolio narrative before the candidate submits it."
+                    "<strong>Automated Criteria Mapping:</strong> A candidate uploads a project report. An AI scans the document and automatically highlights sections that align with specific qualification criteria, creating a preliminary evidence map.",
+                    "<strong>AI Writing Assistant:</strong> An AI provides real-time feedback on the clarity, tone, and structure of a candidate's written portfolio, ensuring it meets professional standards.",
+                    "<strong>Portfolio Submission:</strong> The traditional method where a candidate compiles and submits a portfolio of their work (e.g., reports, designs, presentations) for an assessor to review."
                 ],
-                question: "To what extent can we rely on AI to perform the initial evidence-to-criteria mapping without devaluing the assessor's professional judgment?"
+                question: "If AI assists in creating and mapping the evidence, how can assessors be sure the final work truly represents the candidate's own competence?"
             },
             {
-                title: "Automation & Analytics (Verification)",
-                icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 mr-4 icon-color flex-shrink-0"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" /></svg>`, // Bar Chart / Data
-                description: "This involves using AI to parse non-standard evidence (like chat logs or spreadsheets) to isolate the candidate's contribution and demonstrate interpretive <strong>analysis</strong>.",
+                title: "Performing Spaces",
+                icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 mr-4 icon-color flex-shrink-0"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 01-3-3V4.5a3 3 0 016 0v8.25a3 3 0 01-3 3z" /></svg>`,
+                description: "Environments where learners actively demonstrate skills. AI can create safe, repeatable simulation environments for candidates to perform tasks and generate evidence.",
                 examples: [
-                    "<strong>Skills Checklist Analysis (Data Spaces):</strong> The candidate completes a Skills Checklist using a 1-5 scoring system. The AI processes these scores to provide <strong>quantitative data</strong> on self-assessed strength and then generates a <strong>qualitative report</strong> that highlights high-scoring areas and suggests supporting evidence from other <strong>7 Spaces</strong>.",
-                    "<strong>Video Conversation Mapping:</strong> The candidate uploads a <strong>Video</strong> and transcript of a conversation (e.g., with a client or team member). The AI <strong>analyses</strong> the effective application of knowledge and skills, mapping specific actions/statements to the required skills in the qualification, and identifying any gaps in demonstrated competence.",
-                    "<strong>Predictive Analysis / Just-in-time Feedback:</strong> The AI <strong>analyses</strong> a collaborative project's communication logs (a <strong>Group Spaces</strong> source) to calculate the candidate's unique contribution score, addressing the challenge of delineating individual effort."
+                    "<strong>AI-Powered Role-Play:</strong> The candidate enters a simulated environment to handle a difficult customer conversation. The AI plays the role of the customer, and the system records and scores the candidate's performance against communication metrics.",
+                    "<strong>Live Observation (F2F):</strong> An assessor observes the candidate performing a practical task in their actual workplace, providing a traditional and highly authentic form of evidence.",
+                    "<strong>Video Submission Analysis:</strong> A candidate records themselves completing a technical task. AI analyses the video to check for procedural accuracy, safety compliance, and overall efficiency."
                 ],
-                question: "The core value of this function is the insight it provides. How do we verify the <strong>accuracy and non-biased quality</strong> of AI-generated insights and gap analysis presented to the assessor?"
+                question: "How can we ensure AI simulations are nuanced enough to assess the complex, unscripted human interactions often required in performance tasks?"
             },
             {
-                title: "Self-Reflective (Flipped Secret Space)",
-                icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 mr-4 icon-color flex-shrink-0"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" /></svg>`, // Person / Secret
-                description: "AI moves the candidate beyond simple storytelling in their private reflections toward auditable, measurable, and explicit claims of competence, addressing confidentiality and vagueness through <strong>Socratic Questioning</strong>.",
+                title: "Participation Spaces",
+                icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 mr-4 icon-color flex-shrink-0"><path stroke-linecap="round" stroke-linejoin="round" d="M15.042 21.672L13.684 16.6m0 0l-2.51 2.225.569-9.47 5.227 7.917-3.286-.672zm-7.518-.267A8.25 8.25 0 1120.25 10.5M8.288 14.212A5.25 5.25 0 1117.25 10.5" /></svg>`,
+                description: "Live, synchronous events where learning is about active involvement. For RPL, this space can be used for verification through dialogue and questioning.",
                 examples: [
-                    "<strong>Integrated AI (Word/Google Docs):</strong> Candidate works through a project or task, articulating: 1) the goal, 2) their actions, 3) the outcome, and 4) future learning. The AI focuses on verifying problem-solving by assessing how the candidate links their past action to a <strong>transferable skill</strong>.",
-                    "<strong>AI Coach / Mentoring:</strong> A candidate can choose a structured, private chat with an AI mentor, leveraging the human-like interaction of the <strong>Coaching/Mentoring</strong> environment to articulate sensitive or complex reflective evidence.",
-                    "<strong>Explicit Knowledge Articulation:</strong> The AI ensures sensitive business data is correctly redacted while replacing it with auditable, criterion-specific claims. It uses <strong>Questions that Probe Assumptions</strong> to challenge the candidate's underlying beliefs about their own competence."
+                    "<strong>Socratic Verification Interview:</strong> An AI conducts a recorded Q&A session with the candidate about a piece of evidence they submitted. The AI uses probing questions to confirm the depth of their understanding and ability to apply knowledge.",
+                    "<strong>Assessor Interview:</strong> A one-on-one professional discussion between the candidate and a human assessor, allowing for a deep dive into the candidate's experience and expertise.",
+                    "<strong>Webinar Q&A Session:</strong> The candidate participates in a live webinar where they must answer questions from an expert panel, demonstrating their ability to think on their feet."
                 ],
-                question: "When does AI prompting in a 'Secret Space' move from helpful guidance to a form of undue influence on the candidate's authentic reflection?"
+                question: "What trust frameworks are needed before an AI-led verification interview can be considered a reliable proxy for a conversation with a human assessor?"
             },
             {
-                title: "Interactive Verification (Flipped Participation)",
-                icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 mr-4 icon-color flex-shrink-0"><path stroke-linecap="round" stroke-linejoin="round" d="M15.042 21.672L13.684 16.6m0 0l-2.51 2.225.569-9.47 5.227 7.917-3.286-.672zm-7.518-.267A8.25 8.25 0 1120.25 10.5M8.288 14.212A5.25 5.25 0 1117.25 10.5" /></svg>`, // Handshake / Participation
-                description: "AI is used to verify the candidate's underlying knowledge and ability to apply it contextually, ensuring meaningful contribution beyond simple attendance or referencing documents using a <strong>Socratic Dialogue</strong>.",
+                title: "Data Spaces",
+                icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 mr-4 icon-color flex-shrink-0"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" /></svg>`,
+                description: "Spaces focused on interpreting information and finding insights. AI can analyse candidate-submitted data to identify patterns of competence and create powerful summaries for assessors.",
                 examples: [
-                    "<strong>Blended Verification (Webinar/F2F Interview):</strong> The ultimate verification step can be a high-stakes, live <strong>Webinar Q&A session</strong> or <strong>one-on-one interview</strong> with the assessor, building on the initial evidence generated by the AI.",
-                    "<strong>Socratic Verification Interviews:</strong> The AI runs a short, recorded Q&A session focused on an uploaded policy (<strong>Watching Spaces</strong> evidence). It employs <strong>Questions for Implications & Consequences</strong> (e.g., assessing outcomes) and <strong>Questions for Viewpoints & Perspectives</strong> to prove deep understanding and application of knowledge.",
-                    "<strong>Flipped Participation:</strong> The AI bot conducts a structured interview on a past project, demanding justification for choices made and recording the transcript as verifiably applied knowledge for the <strong>Participation Spaces</strong>. It uses <strong>Questions About the Question</strong> to ensure the candidate reflects on the efficacy of their approach."
+                    "<strong>Skills Checklist Analysis:</strong> A candidate completes a self-assessment checklist. The AI analyses the quantitative scores and generates a qualitative report, highlighting areas of strength and suggesting what evidence could be used to support those claims.",
+                    "<strong>Spreadsheet Analysis:</strong> A candidate submits a project budget spreadsheet. The AI analyses the formulas, data, and structure to verify the candidate's financial literacy and data management skills.",
+                    "<strong>Workplace Data Review:</strong> The candidate provides performance dashboards or reports from their job, which are then reviewed by a human assessor to find evidence of competence."
                 ],
-                question: "If an AI conducts the initial verification interview, what <strong>standardised</strong> metrics or trust frameworks must be in place before the results are passed to a human assessor?"
+                question: "How do we ensure that AI-driven analysis of data is accurate, unbiased, and doesn't misinterpret the context behind the numbers?"
+            },
+            {
+                title: "Watching Spaces",
+                icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 mr-4 icon-color flex-shrink-0"><path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M15.91 11.672a.375.375 0 010 .656l-5.603 3.113a.375.375 0 01-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112z" /></svg>`,
+                description: "Environments for consuming content. For RPL, this is about identifying knowledge gaps and providing targeted resources. AI can personalise this process and then verify comprehension.",
+                examples: [
+                    "<strong>Adaptive Learning Path:</strong> Based on an initial evidence review, an AI identifies a knowledge gap (e.g., a specific regulation). It then recommends a short video or article and follows up with a quiz to verify understanding, generating evidence that the gap has been filled.",
+                    "<strong>Video Comprehension Test:</strong> A candidate watches a video on company policy. Afterwards, an AI chatbot asks contextual questions to confirm they not only watched it but understood its implications.",
+                    "<strong>Prescribed Reading:</strong> An assessor identifies a knowledge gap and asks the candidate to read a specific document or manual, followed by a discussion to confirm their understanding."
+                ],
+                question: "Does verifying comprehension of 'watched' content truly count as evidence of prior learning, or is it simply new learning within the RPL process?"
             }
         ];
 
@@ -167,7 +179,7 @@
             content.innerHTML = `
                 <div class="pb-4">
                     <p class="text-gray-600">${space.description}</p>
-                    <h3 class="font-semibold text-gray-800 mt-4 mb-2">AI Mechanisms & Candidate Benefits:</h3>
+                    <h3 class="font-semibold text-gray-800 mt-4 mb-2">AI & Blended Evidence Examples:</h3>
                     <ul class="list-disc list-inside space-y-1 text-gray-700">
                         ${space.examples.map(ex => `<li>${ex}</li>`).join('')}
                     </ul>
@@ -209,7 +221,12 @@
                 }
             });
         });
-
     </script>
 </body>
 </html>
+
+
+
+
+
+
